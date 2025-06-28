@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+
+button{
+  @apply cursor-pointer
+}
+
+::selection {
+  background-color: #a66eda;
+  /* purple-500 */
+  color: white;
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a855f7;
+  /* Tailwind's purple-500 */
+  border-radius: 9999px;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a855f7 transparent;
+}
