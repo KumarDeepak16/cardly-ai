@@ -8,9 +8,12 @@
   backface-visibility: hidden;
 }
 
+input{
+@apply outline-none
+}
 
 button{
-  @apply cursor-pointer
+  @apply cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed
 }
 
 ::selection {
